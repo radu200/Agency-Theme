@@ -1,5 +1,5 @@
 @import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-@import "../bower_components/font-awesome/scss/font-awesome";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
 @import "../bower_components/animate.css/animate.css";
 @import '../bower_components/owl.carousel/dist/assets/owl.carousel.css';
 @import '../bower_components/owl.carousel/dist/assets/owl.theme.default.css';
@@ -14,20 +14,41 @@ $nav-items-color: #fff; //---UNIVERSAL COMAND
 body {
     margin: 0;
     padding: 0;
-    background: $body-color;
+    background-color: $body-color;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
     margin: 0;
     padding: 0;
 }
-
-#wrapper {
-    width: 100%;
+//contact page
+#contact{
+  width: 100%;
+  height:500px;
+  form{
+    width: 60%;
+    margin-top: 100px;
     margin: 0 auto;
-    height: 2000px;
+
+
+  }
 }
+//abou page
+#showcase-about{
+  img{
+    width: 100%;
+    height: 85vh
+  }
+}
+#content-aboutpage{
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
 
 .container {
     width: 80%;
@@ -74,8 +95,8 @@ h1 {
 #showcase {
     width: 100%;
     height: 400px;
-    background-image: url("../img/bg-img.jpg");
-    height: 100vh;
+    background-image: url("../img/bg-img.png");
+    height: 70vh;
     background-size: cover;
     background-position: center;
     //--modal log-gin
@@ -379,10 +400,12 @@ h1 {
 footer {
     width: 100%;
     height: 50px;
-    background: black;
+    background:$navbar;
     border-top: 2px solid rgb(95, 144, 252);
     color: #fff;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 //---media queries
 @media (min-width:1024px) and (max-width:1300px) {
