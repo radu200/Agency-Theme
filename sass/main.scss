@@ -312,15 +312,16 @@ h1 {
     background: #fff;
     display: flex;
     align-items: center;
-
+   
     .owl-theme {
         box-shadow: none;
     }
 
     .owl-carousel {
+        z-index: -1;
         width: 80%;
         margin: auto;
-        box-shadow: 10px 10px 5px #888888;
+       // box-shadow: 10px 10px 5px #888888;
     }
 
     .box {
