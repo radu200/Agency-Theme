@@ -1,1 +1,1 @@
-This project was inspired by Wizzair website. I just wanted to make responsive website without any css frameworks and i chose flexbox, experience was amazing. Flexbox made everything easier.I used Bootstrap only for contact page and other tools like gulp to compile sass, lightbox plugin,wow.js,Owl carousel.
+
